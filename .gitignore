@@ -1,0 +1,7 @@
+# Bottle artifacts (uploaded to GitHub Releases, not committed)
+*.bottle.tar.gz
+*.bottle*.tar.gz
+*.bottle.json
+
+# macOS
+.DS_Store
