@@ -15,7 +15,7 @@ jobs:
         uses: Homebrew/actions/setup-homebrew@main
 
       - name: Tap this repo
-        run: brew tap rsanheim/tap ${{ github.workspace }}
+        run: brew tap --force rsanheim/tap ${{ github.workspace }}
 
       - name: Run brew audit
         run: brew audit --strict rsanheim/tap/fit
