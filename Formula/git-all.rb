@@ -7,11 +7,11 @@ class GitAll < Formula
   on_macos do
     on_arm do
       url "https://github.com/rsanheim/git-all/releases/download/v#{version}/git-all-#{version}-darwin-arm64.tar.gz"
-      sha256 "PLACEHOLDER_ARM64"
+      sha256 "71bf9ab4cff360ff21590e25e8158cfe1c7fbf11dc2776625f88f1b9e00790bf"
     end
     on_intel do
       url "https://github.com/rsanheim/git-all/releases/download/v#{version}/git-all-#{version}-darwin-x86_64.tar.gz"
-      sha256 "PLACEHOLDER_X86_64"
+      sha256 "522356a96ce428d1fc46220898b04a19b51f37fa175a18be76d236d0f9ec630c"
     end
   end
 
