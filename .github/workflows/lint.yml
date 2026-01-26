@@ -14,11 +14,6 @@ jobs:
       - name: Set up Homebrew
         uses: Homebrew/actions/setup-homebrew@main
 
-      - name: Tap this repo
-        run: |
-          brew untap rsanheim/tap 2>/dev/null || true
-          brew tap rsanheim/tap ${{ github.workspace }}
-
       - name: Run brew audit
         run: brew audit --strict rsanheim/tap/git-all
 
