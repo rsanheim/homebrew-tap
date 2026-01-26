@@ -12,12 +12,12 @@ Or, in a `brew bundle` Brewfile:
 
 ```ruby
 tap "rsanheim/tap"
-brew "fit"
+brew "git-all"
 ```
 
 ## Available Formulae
 
-* **fit** - Parallel git operations across many repositories
+* **git-all** - Parallel git operations across many repositories
 
 ## Documentation
 
