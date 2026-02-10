@@ -1,17 +1,17 @@
 class GitAll < Formula
   desc "Parallel git operations across many repositories"
   homepage "https://github.com/rsanheim/git-all"
-  version "0.6.1"
+  version "0.7.0"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/rsanheim/git-all/releases/download/v#{version}/git-all-#{version}-darwin-arm64.tar.gz"
-      sha256 "d7d403b0c67a75e6f8790a802725185523a064ef7dd73df107956481fdbb7f41"
+      sha256 "9245d6d6b5cfab3426a64bfd0c7204b8c5bccd024440da1db46166d757e18798"
     end
     on_intel do
       url "https://github.com/rsanheim/git-all/releases/download/v#{version}/git-all-#{version}-darwin-x86_64.tar.gz"
-      sha256 "62cd2da1642d18f626306e2c3c53454344798c66d2fd56e45ddb87745d342595"
+      sha256 "a69d9308e0295d0165869bee1b33274376310096e7b4a42e5301985cbc02c8ac"
     end
   end
 
