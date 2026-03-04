@@ -1,38 +1,32 @@
-# Documentation: https://docs.brew.sh/Formula-Cookbook
-#                https://docs.brew.sh/rubydoc/Formula
-# PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
 class Plur < Formula
-  desc "fast parallel test runner, primarily for ruby/rails. single binary (written in Go)"
+  desc "Fast parallel test runner for Ruby/RSpec"
   homepage "https://github.com/rsanheim/plur"
   version "0.40.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/rsanheim/plur/releases/download/v0.40.0/plur_0.40.0_Darwin_arm64.tar.gz"
+      url "https://github.com/rsanheim/plur/releases/download/v#{version}/plur_#{version}_Darwin_arm64.tar.gz"
       sha256 "06dcdf44f96811fb2f550cf7bd1514e9836e358edd233ec4d9bb655b4c683540"
     end
   end
 
   on_linux do
+    on_intel do
+      url "https://github.com/rsanheim/plur/releases/download/v#{version}/plur_#{version}_Linux_x86_64.tar.gz"
+      sha256 "077ea8c18c31f42d2e8c3cd710045b4f3c9d2f16782c5a59437ee2825461759b"
+    end
+    on_arm do
+      url "https://github.com/rsanheim/plur/releases/download/v#{version}/plur_#{version}_Linux_arm64.tar.gz"
+      sha256 "88c1848925c4cd63a8236163187273cf9c61aa39bf9b5faaf919e6a061be63cb"
+    end
   end
 
-  # Additional dependency
-  # resource "" do
-  #   url ""
-  #   sha256 ""
-  # end
+  def install
+    bin.install "plur"
+  end
 
   test do
-    # `test do` will create, run in and delete a temporary directory.
-    #
-    # This test will fail and we won't accept that! For Homebrew/homebrew-core
-    # this will need to be a test that verifies the functionality of the
-    # software. Run the test with `brew test plur`. Options passed
-    # to `brew install` such as `--HEAD` also need to be provided to `brew test`.
-    #
-    # The installed folder is not in the path, so use the entire path to any
-    # executables being tested: `system bin/"program", "do", "something"`.
-    system "false"
+    assert_match version.to_s, shell_output("#{bin}/plur --version")
   end
 end
