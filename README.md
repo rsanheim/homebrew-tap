@@ -1,6 +1,6 @@
 # Homebrew Tap
 
-Homebrew formulae for rsanheim's tools.
+rsanheim's homebrew taps.
 
 ## How do I install these formulae?
 
@@ -13,11 +13,13 @@ Or, in a `brew bundle` Brewfile:
 ```ruby
 tap "rsanheim/tap"
 brew "git-all"
+brew "plur"
 ```
 
 ## Available Formulae
 
-* **git-all** - Parallel git operations across many repositories
+* [git-all](https://github.com/rsanheim/git-all) - Parallel git operations across many repositories
+* [plur](https://github.com/rsanheim/plur) - Fast parallel test runner for Ruby/RSpec
 
 ## Documentation
 

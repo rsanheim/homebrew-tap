@@ -15,7 +15,11 @@ jobs:
         uses: Homebrew/actions/setup-homebrew@main
 
       - name: Run brew audit
-        run: brew audit --strict rsanheim/tap/git-all
+        run: |
+          brew audit --strict rsanheim/tap/git-all
+          brew audit --strict rsanheim/tap/plur
 
       - name: Run brew style
-        run: brew style rsanheim/tap/git-all
+        run: |
+          brew style rsanheim/tap/git-all
+          brew style rsanheim/tap/plur
