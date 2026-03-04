@@ -1,5 +1,5 @@
 class Plur < Formula
-  desc "Fast parallel test runner for Ruby/RSpec"
+  desc "Fast parallel test runner for Ruby/Rails"
   homepage "https://github.com/rsanheim/plur"
   version "0.41.0"
   license "MIT"
