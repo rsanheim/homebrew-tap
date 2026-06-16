@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 formulae = FileList["Formula/*.rb"].map { |f| File.basename(f, ".rb") }
 tap = "rsanheim/tap"
 
@@ -15,6 +17,11 @@ task :style do
   end
 end
 
+desc "Load all formulae for every supported platform"
+task :readall do
+  sh "brew", "readall", tap
+end
+
 desc "Run brew test on all formulae"
 task :test do
   formulae.each do |name|
@@ -22,5 +29,5 @@ task :test do
   end
 end
 
-desc "Run audit and style checks"
-task default: [:audit, :style]
+desc "Run local tap checks"
+task default: [:style, :readall]

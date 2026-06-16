@@ -11,14 +11,17 @@ This is a Homebrew tap containing custom formulae for rsanheim's tools. The tap 
 ### Linting and Validation
 
 ```bash
-# Lint a formula (strict mode)
-brew audit --strict rsanheim/tap/git-all
-
 # Check Ruby style
 brew style rsanheim/tap/git-all
 
+# Load all formulae for all supported platforms
+brew readall rsanheim/tap
+
 # Run formula tests
 brew test rsanheim/tap/git-all
+
+# Optional extra formula lint pass. Homebrew 6 rejects path-based audit.
+brew audit --strict rsanheim/tap/git-all
 ```
 
 ### Local Development
@@ -45,4 +48,4 @@ When updating a formula version:
 
 1. Update the `version` string
 2. Update SHA256 checksums for each architecture (get from GitHub release assets)
-3. Run `brew audit --strict` and `brew style` before committing
+3. Run `brew style`, `brew readall`, and `brew test` before committing
