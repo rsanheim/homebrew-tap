@@ -19,7 +19,7 @@ end
 
 desc "Load all formulae for every supported platform"
 task :readall do
-  sh "brew", "readall", tap
+  sh "brew", "readall", "--os=all", "--arch=all", tap
 end
 
 desc "Run brew test on all formulae"

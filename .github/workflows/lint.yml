@@ -23,3 +23,11 @@ jobs:
         run: |
           brew style rsanheim/tap/git-all
           brew style rsanheim/tap/plur
+
+      - name: Run brew readall
+        run: brew readall --os=all --arch=all rsanheim/tap
+
+      - name: Run brew install/test
+        run: |
+          brew install rsanheim/tap/git-all
+          brew test rsanheim/tap/git-all
