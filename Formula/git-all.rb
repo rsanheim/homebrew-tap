@@ -28,9 +28,11 @@ class GitAll < Formula
 
   def install
     bin.install "git-all"
+    man1.install "git-all.1"
   end
 
   test do
     assert_match "git-all v#{version}", shell_output("#{bin}/git-all meta")
+    assert_path_exists man1/"git-all.1"
   end
 end
