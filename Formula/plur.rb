@@ -5,13 +5,13 @@
 class Plur < Formula
   desc "Fast parallel test runner for Ruby/RSpec"
   homepage "https://github.com/rsanheim/plur"
-  version "0.72.0"
+  version "0.72.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/rsanheim/plur/releases/download/v0.72.0/plur_0.72.0_darwin_arm64.tar.gz"
-      sha256 "5e082d2c73d61562606a019a8bff56fd4d1e3b2b9e499f451d74569885a5ab49"
+      url "https://github.com/rsanheim/plur/releases/download/v0.72.1/plur_0.72.1_darwin_arm64.tar.gz"
+      sha256 "bf5a7df98be832484c1bc98e39963ea8e07d262884e1886eefe58760ee218d0a"
 
       define_method(:install) do
         bin.install "plur"
@@ -21,15 +21,15 @@ class Plur < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rsanheim/plur/releases/download/v0.72.0/plur_0.72.0_linux_amd64.tar.gz"
-      sha256 "15b8f1ec5027888e58e2a037dc8e33d29aa6b97f66bf79e9675dc80c18613448"
+      url "https://github.com/rsanheim/plur/releases/download/v0.72.1/plur_0.72.1_linux_amd64.tar.gz"
+      sha256 "79c1fc8e12b5bdc6e868d7160dd9c869911c4916109cfecff434681ca655261a"
       define_method(:install) do
         bin.install "plur"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rsanheim/plur/releases/download/v0.72.0/plur_0.72.0_linux_arm64.tar.gz"
-      sha256 "08113ba582c5042b974236bedf56617384925f9024a122b3aadebfed004f0306"
+      url "https://github.com/rsanheim/plur/releases/download/v0.72.1/plur_0.72.1_linux_arm64.tar.gz"
+      sha256 "4857e118c61164d69b4c131edcc760350b640e98a8bb962372032424fc8d7e41"
       define_method(:install) do
         bin.install "plur"
       end
