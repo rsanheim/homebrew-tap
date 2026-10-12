@@ -1,28 +1,28 @@
 class GitAll < Formula
   desc "Parallel git operations across many repositories"
   homepage "https://github.com/rsanheim/git-all"
-  version "0.7.4"
+  version "0.7.5"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/rsanheim/git-all/releases/download/v#{version}/git-all-#{version}-darwin-arm64.tar.gz"
-      sha256 "39d084cc14edd6e08c03dc6f25f19807b30dd8b170a5c65bd9bf2d13f4b40de4"
+      sha256 "53298139b418ed7944302ca0a441eb76f5d0ece795803c44f3370047e168db04"
     end
     on_intel do
       url "https://github.com/rsanheim/git-all/releases/download/v#{version}/git-all-#{version}-darwin-x86_64.tar.gz"
-      sha256 "bf8b6c4c0138a4fbd1896c05ec65b4aaf9a9cdd6163f8aa6fecc4ad2742069ec"
+      sha256 "b73c10563a33d545dfca61318714ad81cc6fe0a7a1252613658b960603c9f664"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/rsanheim/git-all/releases/download/v#{version}/git-all-#{version}-linux-arm64.tar.gz"
-      sha256 "6094e576c4173dd60eb513eb3a5b448eeec4043e5c5ad02cf08cff82db13aa76"
+      sha256 "536f35219b97d92c9a04ddb595e47784c6d287c92e44b2873b5f95d7f39935de"
     end
     on_intel do
       url "https://github.com/rsanheim/git-all/releases/download/v#{version}/git-all-#{version}-linux-x86_64.tar.gz"
-      sha256 "e9164f37ea0eae554a0dfeafd1f7e2d1799bc0d81640b65679ea28f32b45efa3"
+      sha256 "5397628710b763d1cb316a49156e7dbbaceb0254e42ba8750a98d261af5faa07"
     end
   end
 
