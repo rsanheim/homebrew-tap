@@ -46,7 +46,7 @@ brew reinstall rsanheim/tap/git-all
 
 When updating a formula version:
 
-1. Update the `version` string
+1. Update the versioned download URLs (`git-all` infers its version from these URLs; do not add an explicit `version` declaration)
 2. Update SHA256 checksums for each architecture (get from GitHub release assets)
 3. Run `brew style`, `brew readall`, and `brew test` before committing
 
