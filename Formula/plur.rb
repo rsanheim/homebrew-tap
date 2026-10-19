@@ -5,7 +5,6 @@
 class Plur < Formula
   desc "Fast parallel test runner for Ruby/RSpec"
   homepage "https://github.com/rsanheim/plur"
-  version "0.82.0"
   license "MIT"
 
   on_macos do
