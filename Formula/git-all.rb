@@ -5,23 +5,23 @@ class GitAll < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/rsanheim/git-all/releases/download/v0.7.6/git-all-0.7.6-darwin-arm64.tar.gz"
-      sha256 "245c8028e07bbbcd6da18294975deedd457611ee256d92632e5fb6bd7e6ecf6d"
+      url "https://github.com/rsanheim/git-all/releases/download/v0.7.7/git-all-0.7.7-darwin-arm64.tar.gz"
+      sha256 "2e2ef42897d70a9e3f2f120f83d7ed2fde9283af51108155d7774da1ee5cc816"
     end
     on_intel do
-      url "https://github.com/rsanheim/git-all/releases/download/v0.7.6/git-all-0.7.6-darwin-x86_64.tar.gz"
-      sha256 "5c4823958c6b9869e9164d2407eec6730a04f7ae6dd7b08aeae2ec89c99afa4d"
+      url "https://github.com/rsanheim/git-all/releases/download/v0.7.7/git-all-0.7.7-darwin-x86_64.tar.gz"
+      sha256 "31f293a63decab7830374fbb85d2dc1921b607374f2248b05fd8103fe3386b5b"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/rsanheim/git-all/releases/download/v0.7.6/git-all-0.7.6-linux-arm64.tar.gz"
-      sha256 "8932a865ab98cc74ded40b1b12496b4b5773bcdf3917b43a1282495386a2d5fd"
+      url "https://github.com/rsanheim/git-all/releases/download/v0.7.7/git-all-0.7.7-linux-arm64.tar.gz"
+      sha256 "688b36e90f112b3444518b1395aa11e0fe5234ec3f20afd0a1dbd37713fb8234"
     end
     on_intel do
-      url "https://github.com/rsanheim/git-all/releases/download/v0.7.6/git-all-0.7.6-linux-x86_64.tar.gz"
-      sha256 "60ab317594d86cd3948beefa1a9578d37dac8bec35cf5ae1ec4f7580d03f9ef7"
+      url "https://github.com/rsanheim/git-all/releases/download/v0.7.7/git-all-0.7.7-linux-x86_64.tar.gz"
+      sha256 "603efef50d0a18cad775a94183a7e51b07b129e86ad10bf2f765af18dcff5c09"
     end
   end
 
